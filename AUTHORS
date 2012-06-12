@@ -1,0 +1,22 @@
+Blaze: http://www.dsource.org/projects/blaze
+
+Original author and maintainer: Mason Green (Zzzzrrr)
+
+Contributers:
+
+	Clay Smith (Admin)
+	Benjamin Saunders (Testbed framework)
+	Brian Schott (Documentation)
+    Tim Chas (Initial Phobos port + testing)
+
+Blaze is based on the Box2D & Motor2 physics engines, and implements
+code and ideas from these projects.
+
+Box2D Author: Erin Catto
+	http://www.box2d.org
+
+Motor2 Author: Michael Baczynski
+	http://lab.polygonal.de/
+
+Special thanks to Rene Schulte for his C# Smooth Particle Hydrodynamics (SPH) code.
+	http://www.rene-schulte.info/
