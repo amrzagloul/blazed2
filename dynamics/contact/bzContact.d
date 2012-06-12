@@ -117,9 +117,14 @@ class bzContact {
 
     this (bzShape s1, bzShape s2) {
         flags = 0;
-        if (s1.isSensor || s2.isSensor) {
-            flags |= NON_SOLID;
+
+        // work-around for bzNullContact + optimizer complaning about null dereference
+        if ((s1 !is null) && (s2 !is null)) {
+            if (s1.isSensor || s2.isSensor) {
+                flags |= NON_SOLID;
+            }
         }
+
         m_shape1 = s1;
         m_shape2 = s2;
         m_manifoldCount = 0;
