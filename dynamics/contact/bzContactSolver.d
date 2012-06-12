@@ -331,8 +331,6 @@ class bzContactSolver {
                 b.y = vn2 - cp2.velocityBias;
                 b -= bzMul(c.K, a);
 
-                k_errorTol = 1e-3f;
-
                 for (;;) {
                     //
                     // Case 1: vn = 0

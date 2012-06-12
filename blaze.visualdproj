@@ -11,7 +11,7 @@
   <trace>0</trace>
   <quiet>0</quiet>
   <verbose>0</verbose>
-  <vtls>0</vtls>
+  <vtls>1</vtls>
   <symdebug>1</symdebug>
   <optimize>0</optimize>
   <cpu>0</cpu>
@@ -107,7 +107,7 @@
   <trace>0</trace>
   <quiet>0</quiet>
   <verbose>0</verbose>
-  <vtls>0</vtls>
+  <vtls>1</vtls>
   <symdebug>0</symdebug>
   <optimize>1</optimize>
   <cpu>0</cpu>
@@ -127,7 +127,7 @@
   <noboundscheck>1</noboundscheck>
   <useSwitchError>0</useSwitchError>
   <useUnitTests>0</useUnitTests>
-  <useInline>0</useInline>
+  <useInline>1</useInline>
   <release>1</release>
   <preservePaths>0</preservePaths>
   <warnings>1</warnings>
@@ -194,14 +194,6 @@
  </Config>
  <Folder name="blaze">
   <Folder name="collisions">
-   <Folder name="shapes">
-    <File path="collision\shapes\bzCircle.d" />
-    <File path="collision\shapes\bzEdge.d" />
-    <File path="collision\shapes\bzFluidParticle.d" />
-    <File path="collision\shapes\bzPolygon.d" />
-    <File path="collision\shapes\bzShape.d" />
-    <File path="collision\shapes\bzShapeType.d" />
-   </Folder>
    <Folder name="nbody">
     <File path="collision\nbody\bzBroadPhase.d" />
     <File path="collision\nbody\bzPair.d" />
@@ -215,6 +207,14 @@
     <File path="collision\pairwise\bzGjk.d" />
     <File path="collision\pairwise\bzMpr.d" />
     <File path="collision\pairwise\bzTimeOfImpact.d" />
+   </Folder>
+   <Folder name="shapes">
+    <File path="collision\shapes\bzCircle.d" />
+    <File path="collision\shapes\bzEdge.d" />
+    <File path="collision\shapes\bzFluidParticle.d" />
+    <File path="collision\shapes\bzPolygon.d" />
+    <File path="collision\shapes\bzShape.d" />
+    <File path="collision\shapes\bzShapeType.d" />
    </Folder>
    <File path="collision\bzCollision.d" />
   </Folder>
@@ -250,16 +250,6 @@
     </Folder>
     <File path="dynamics\fluid\bzSPHSimulation.d" />
    </Folder>
-   <Folder name="joints">
-    <File path="dynamics\joints\bzDistanceJoint.d" />
-    <File path="dynamics\joints\bzGearJoint.d" />
-    <File path="dynamics\joints\bzJoint.d" />
-    <File path="dynamics\joints\bzLineJoint.d" />
-    <File path="dynamics\joints\bzMouseJoint.d" />
-    <File path="dynamics\joints\bzPrismaticJoint.d" />
-    <File path="dynamics\joints\bzPulleyJoint.d" />
-    <File path="dynamics\joints\bzRevoluteJoint.d" />
-   </Folder>
    <Folder name="forces">
     <File path="dynamics\forces\bzAttractor.d" />
     <File path="dynamics\forces\bzBungee1.d" />
@@ -275,6 +265,16 @@
     <File path="dynamics\forces\bzStayUprightSpring.d" />
     <File path="dynamics\forces\bzThruster.d" />
     <File path="dynamics\forces\bzWind.d" />
+   </Folder>
+   <Folder name="joints">
+    <File path="dynamics\joints\bzDistanceJoint.d" />
+    <File path="dynamics\joints\bzGearJoint.d" />
+    <File path="dynamics\joints\bzJoint.d" />
+    <File path="dynamics\joints\bzLineJoint.d" />
+    <File path="dynamics\joints\bzMouseJoint.d" />
+    <File path="dynamics\joints\bzPrismaticJoint.d" />
+    <File path="dynamics\joints\bzPulleyJoint.d" />
+    <File path="dynamics\joints\bzRevoluteJoint.d" />
    </Folder>
    <File path="dynamics\bzBody.d" />
    <File path="dynamics\bzBodyDef.d" />

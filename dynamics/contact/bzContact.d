@@ -166,8 +166,6 @@ class bzContact {
 
     abstract void evaluate(bzContactListener listener);
 
-    static bool s_initialized;
-
     int flags;
 
     // bzWorld pool and list pointers.

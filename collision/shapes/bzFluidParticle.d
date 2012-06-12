@@ -50,7 +50,7 @@ public class bzFluidParticle : bzShape {
     public float pressure;
     public bzFluidParticle[uint] neighbors;
     private float gridSize;
-    public static float margin;
+    public float margin;
 	/// This shapes identifier
     ushort ID;
 

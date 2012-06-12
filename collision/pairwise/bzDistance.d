@@ -25,8 +25,6 @@ import blaze.collision.shapes.bzCircle;
 import blaze.collision.shapes.bzPolygon;
 import blaze.collision.shapes.bzShapeType;
 
-int g_GJK_Iterations = 0;
-
 // GJK using Voronoi regions (Christer Ericson) and region selection
 // optimizations (Casey Muratori).
 
@@ -187,7 +185,6 @@ float distanceGeneric(T, U) (ref bzVec2 x1, ref bzVec2 x2, T shape1, bzXForm xf1
 				x1 = w1;
 				x2 = w2;
 			}
-			g_GJK_Iterations = iter;
 			return sqrt(vSqr);
 		}
 
@@ -220,7 +217,6 @@ float distanceGeneric(T, U) (ref bzVec2 x1, ref bzVec2 x2, T shape1, bzXForm xf1
 		// If we have three points, then the origin is in the corresponding triangle.
 		if (pointCount == 3)
 		{
-			g_GJK_Iterations = iter;
 			return 0.0f;
 		}
 
@@ -232,14 +228,12 @@ float distanceGeneric(T, U) (ref bzVec2 x1, ref bzVec2 x2, T shape1, bzXForm xf1
 
 		if (vSqr <= 100.0f * float.epsilon * maxSqr)
 		{
-			g_GJK_Iterations = iter;
 			v = x2 - x1;
 			vSqr = bzDot(v, v);
 			return sqrt(vSqr);
 		}
 	}
 
-	g_GJK_Iterations = maxIterations;
 	return sqrt(vSqr);
 }
 

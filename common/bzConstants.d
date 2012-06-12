@@ -170,9 +170,6 @@ struct bzVersion
 /// Current version.
 extern bzVersion k_version;
 
-/// Unknown
-float k_errorTol;
-
 /// Magic?
 float FORCE_SCALE(float x) { return cast(uint)(x) << 7; }
 
