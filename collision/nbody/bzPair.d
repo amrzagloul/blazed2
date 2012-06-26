@@ -94,28 +94,30 @@ public class bzBufferedPair {
     int proxyId1;
     int proxyId2;
 
-    ///
-    bool opCmp(bzBufferedPair pair2) {
+    override int opCmp(Object other) {
+
+        auto pair2 = cast(bzBufferedPair)other;
+        assert(pair2 !is null);
 
         if (proxyId1 < pair2.proxyId1) {
-            return false;
+            return -1;
         }
 
         if (proxyId1 == pair2.proxyId1) {
             if (proxyId2 < pair2.proxyId2)
-                return false;
+                return -1;
         }
 
         if (proxyId1 > pair2.proxyId1) {
-            return true;
+            return 1;
         }
 
         if (proxyId1 == pair2.proxyId1) {
             if (proxyId2 > pair2.proxyId2)
-                return true;
+                return 1;
         }
 
-        return false;
+        return 0;
     }
 
     private bool equals(bzBufferedPair other) {

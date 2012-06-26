@@ -212,6 +212,9 @@ float distanceGeneric(T, U) (ref bzVec2 x1, ref bzVec2 x2, T shape1, bzXForm xf1
 			points[2] = w;
 			pointCount = processThree(x1, x2, p1s, p2s, points);
 			break;
+
+		default:
+			assert(false);
 		}
 
 		// If we have three points, then the origin is in the corresponding triangle.
