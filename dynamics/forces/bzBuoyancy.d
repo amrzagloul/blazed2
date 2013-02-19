@@ -66,7 +66,7 @@ public class bzBuoyancy : bzForceGenerator {
         float submergedArea = 0;
 
         float xmin = float.max;
-        float xmax = float.min;
+        float xmax = float.min_normal;
 
         float cx = 0.0f;
         float cy = 0.0f;
