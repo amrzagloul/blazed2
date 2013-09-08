@@ -1,0 +1,15 @@
+{
+    "name": "blazed2",
+    "description": "A D2 port of Blaze, a 2D game physics engine based on Box2D.",
+    "homepage": "https://github.com/p0nce/blazed2",
+    "license": "zlib",
+
+    "authors": [
+        "Mason Green (Zzzzrrr)",
+        "Clay Smith (Admin)",
+        "Benjamin Saunders (Testbed framework)",
+        "Brian Schott (Documentation)",
+        "Tim Chas (Initial Phobos port + testing)",
+        "ponce (D2 port)"
+    ]
+}
