@@ -8,11 +8,22 @@ by a Visual D project.
 Original
 ========
 
-The original Blaze can be found on dsource.org: 
+The original Blaze can be found on dsource.org:
 http://www.dsource.org/projects/blaze
+
+Examples
+========
+
+There are several examples in the `examples` directory.
+To test hello world run:
+
+```
+rdmd -I../source helloWorld.d
+```
 
 Limitations
 ===========
 
-As examples and tests were based on Tango and team0xf's OMG, I did NOT port them.
-Consequently the best showcasa for Blaze capabilities still is on the original dsource project page.
+The large test-bed example in the D1 Blaze project is based on Tango and
+team0xf's OMG, I did NOT port it. Consequently the best showcase for
+Blaze capabilities still is on the original dsource project page.
