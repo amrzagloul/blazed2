@@ -1,6 +1,6 @@
 {
     "name": "blazed2",
-    "description": "A D2 port of Blaze, a 2D game physics engine based on Box2D.",
+    "description": "A D2 port of Blaze, a 2D game physics engine based on Box2D. You might want to the dchip package instead.",
     "homepage": "https://github.com/p0nce/blazed2",
     "license": "zlib",
 
